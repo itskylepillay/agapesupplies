@@ -449,11 +449,18 @@ button {
 }
 .products-banner {
   background:
-   
     url("/product.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .products-banner {
+    background-size: 130%;
+    background-position: center;
+  }
 }
 
 .contact-banner {
