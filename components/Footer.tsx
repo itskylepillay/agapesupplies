@@ -13,8 +13,7 @@ export default function Footer() {
           </p>
 
           <p>
-            Quality industrial products, dependable service
-            and long-term business partnerships.
+            Agape is more than a word,<br></br>its how we serve.<br></br><br></br> FAITH-DRIVEN<br></br>SERVICE-FOCUSED<br></br>SOLUTIONS THAT DELIVER.
           </p>
         </div>
 
@@ -46,8 +45,16 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()}  Agape Supplies (Pty) Ltd. All rights reserved.
-Designed and Developed by OrcaHalo Studios
+          © {new Date().getFullYear()} Agape Supplies (Pty) Ltd. All rights reserved. {" "}
+        
+          <a
+            href="https://www.google.com/search?client=ms-android-vivo-rvo3&hs=QI3&sca_esv=1e85827d6e1fa685&hl=en-ZA&cs=1&sxsrf=APpeQnskjX-QZuWM8cubL71ZKTWFIt6CSg%3A1785875380345&kgmid=%2Fg%2F11yyvywlv9&q=OrcaHalo%20Studios&shem=epsd1%2Cltae%2Crimspwouoe&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F4&kgs=42a572d2d7a35e7f"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="orcahalo-link"
+          >
+              Designed and Developed by OrcaHalo Studios
+          </a>
         </p>
       </div>
     </footer>

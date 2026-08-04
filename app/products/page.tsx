@@ -54,7 +54,7 @@ const products = [
 export default function ProductsPage() {
   return (
     <>
-      <section className="page-banner">
+      <section className="page-banner products-banner">
         <p className="eyebrow">
           OUR PRODUCT RANGE
         </p>

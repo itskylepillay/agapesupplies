@@ -447,6 +447,23 @@ button {
   padding: 115px 30px;
   text-align: center;
 }
+.products-banner {
+  background:
+   
+    url("/product.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-banner {
+  background:
+    
+    url("/contactme.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .about-banner {
   background:
   
@@ -903,3 +920,10 @@ button {
     grid-column: auto;
   }
 }
+.orcahalo-link {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+

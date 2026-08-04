@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <>
-      <section className="page-banner">
+      <section className="page-banner contact-banner">
         <p className="eyebrow">
           CONTACT AGAPE
         </p>
@@ -49,7 +49,7 @@ export default function ContactPage() {
             </h3>
 
             <p>
-              Contact number coming soon
+               061 598 6056
             </p>
           </article>
 
@@ -61,7 +61,7 @@ export default function ContactPage() {
             </h3>
 
             <p>
-              Email address coming soon
+              kandy@agapesupplies.co.za
             </p>
           </article>
 
@@ -73,7 +73,7 @@ export default function ContactPage() {
             </h3>
 
             <p>
-              WhatsApp number coming soon
+              061 598 6056
             </p>
           </article>
 
