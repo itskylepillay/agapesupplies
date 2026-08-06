@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import HeroCarousel from "@/components/HeroCarousel";
 const products = [
   {
     icon: "/gloves.png",
@@ -71,57 +71,53 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-card">
-          <div className="hero-image-container">
-            <img
-              src="/safety.jpg"
-              alt="Industrial safety products"
-              className="hero-image"
-            />
-          </div>
+       <div className="hero-card">
+  <div className="hero-image-container">
+    <HeroCarousel />
+  </div>
 
-          <h2>
-            Everything Your Workplace Needs
-          </h2>
+  <h2>
+    Everything Your Workplace Needs
+  </h2>
 
-          <p>
-            Quality products. Competitive pricing.
-            Reliable service.
-          </p>
-        </div>
-      </section>
+  <p>
+    Quality products. Competitive pricing.
+    Reliable service.
+  </p>
+</div>
+</section>
 
-      <section className="intro-section">
-        <div className="section-heading">
-          <p className="section-label">
-            ABOUT AGAPE
-          </p>
+<section className="intro-section">
+  <div className="section-heading">
+    <p className="section-label">
+      ABOUT AGAPE
+    </p>
 
-          <h2>
-            Dependable Supply Solutions
-            for Your Business
-          </h2>
-        </div>
+    <h2>
+      Dependable Supply Solutions
+      for Your Business
+    </h2>
+  </div>
 
-        <div className="intro-content">
-          <p>
-            Agape Supplies is a South African industrial
-            supply company committed to providing businesses
-            with dependable workplace solutions.
-          </p>
+  <div className="intro-content">
+    <p>
+      Agape Supplies is a South African industrial
+      supply company committed to providing businesses
+      with dependable workplace solutions.
+    </p>
 
-          <p>
-            By working with trusted manufacturers and
-            suppliers, we offer a broad range of industrial
-            products designed to support businesses across
-            multiple industries.
-          </p>
+    <p>
+      By working with trusted manufacturers and
+      suppliers, we offer a broad range of industrial
+      products designed to support businesses across
+      multiple industries.
+    </p>
 
-          <Link href="/about" className="text-link">
-            Learn More About Us →
-          </Link>
-        </div>
-      </section>
+    <Link href="/about" className="text-link">
+      Learn More About Us →
+    </Link>
+  </div>
+</section>
 
       <section className="products-preview">
         <div className="section-heading center">
