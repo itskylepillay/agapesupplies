@@ -999,3 +999,8 @@ body {
   object-fit: cover;
   object-position: center;
 }
+.hero-swiper,
+.hero-swiper .swiper-wrapper,
+.hero-swiper .swiper-slide {
+  height: 100%;
+}
