@@ -8,11 +8,15 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const pathname = usePathname();
+const pathname = usePathname();
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
 
   return (
     <header className="navbar">
