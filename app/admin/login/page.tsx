@@ -53,7 +53,7 @@ export default function AdminLogin() {
         <div className="login-heading">
           <p className="small-title">ADMINISTRATION</p>
 
-          <h2>Welcome back</h2>
+          <h2>Welcome Kandy</h2>
 
           <p>
             Sign in to manage your Agape Supplies website.
