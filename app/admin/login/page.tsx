@@ -29,7 +29,7 @@ export default function AdminLogin() {
       return;
     }
 
-    router.push("/admin");
+    router.replace("/admin");
   }
 
   return (
@@ -41,6 +41,7 @@ export default function AdminLogin() {
       </div>
 
       <section className="login-card">
+
         <div className="login-logo">
           <div className="logo-mark">A</div>
 
@@ -61,8 +62,11 @@ export default function AdminLogin() {
         </div>
 
         <form onSubmit={handleLogin} className="login-form">
+
           <div className="input-group">
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">
+              Email address
+            </label>
 
             <input
               id="email"
@@ -75,7 +79,9 @@ export default function AdminLogin() {
           </div>
 
           <div className="input-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">
+              Password
+            </label>
 
             <input
               id="password"
@@ -87,15 +93,22 @@ export default function AdminLogin() {
             />
           </div>
 
-          {error && <div className="login-error">{error}</div>}
+          {error && (
+            <div className="login-error">
+              {error}
+            </div>
+          )}
 
           <button
             type="submit"
             disabled={loading}
             className="login-button"
           >
-            {loading ? "Signing in..." : "Sign in to Admin"}
+            {loading
+              ? "Signing in..."
+              : "Sign in to Admin"}
           </button>
+
         </form>
 
         <button
@@ -105,9 +118,11 @@ export default function AdminLogin() {
         >
           ← Back to Agape Supplies
         </button>
+
       </section>
 
       <style jsx>{`
+
         .admin-login-page {
           min-height: 100vh;
           position: relative;
@@ -264,16 +279,13 @@ export default function AdminLogin() {
           color: #111827;
           font-size: 14px;
           outline: none;
-          transition:
-            border-color 0.2s ease,
-            box-shadow 0.2s ease,
-            background 0.2s ease;
         }
 
         .input-group input:focus {
           background: white;
           border-color: #285596;
-          box-shadow: 0 0 0 4px rgba(40, 85, 150, 0.1);
+          box-shadow:
+            0 0 0 4px rgba(40, 85, 150, 0.1);
         }
 
         .login-error {
@@ -296,16 +308,10 @@ export default function AdminLogin() {
           font-size: 14px;
           font-weight: 700;
           cursor: pointer;
-          transition:
-            transform 0.2s ease,
-            box-shadow 0.2s ease,
-            background 0.2s ease;
         }
 
         .login-button:hover:not(:disabled) {
           background: #1f467d;
-          transform: translateY(-2px);
-          box-shadow: 0 10px 25px rgba(40, 85, 150, 0.25);
         }
 
         .login-button:disabled {
@@ -322,7 +328,6 @@ export default function AdminLogin() {
           color: #6b7280;
           font-size: 13px;
           cursor: pointer;
-          transition: color 0.2s ease;
         }
 
         .back-home:hover {
@@ -342,8 +347,7 @@ export default function AdminLogin() {
         }
 
         @keyframes float {
-          0%,
-          100% {
+          0%, 100% {
             transform: translateY(0) translateX(0);
           }
 
@@ -361,11 +365,8 @@ export default function AdminLogin() {
           .login-heading h2 {
             font-size: 27px;
           }
-
-          .login-logo {
-            margin-bottom: 30px;
-          }
         }
+
       `}</style>
     </main>
   );
